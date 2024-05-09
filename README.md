@@ -6,4 +6,5 @@ Author:Z.Wu
 
 ### List of figures
 
-1. Joint_volcano
+1. `Joint_volcano.R`
+2. `Volcano_plot_proportion.R`
