@@ -15,7 +15,6 @@ head(dfBR)
 dfBR$cluster = 'BR'
 
 dfBR$label <- ifelse(dfBR$padj<0.01 & abs(dfBR$log2FoldChange) >= 0.5849625,"Adj P<0.01","NS")
-#dfBR$Change <- ifelse(dfBR$log2FoldChange>0,"Up","Down")
 head(dfBR)
 
 #2 input 
@@ -24,7 +23,6 @@ head(dfPBM)
 dfPBM$cluster = 'PBM'
 
 dfPBM$label <- ifelse(dfPBM$padj < 0.01 & abs(dfPBM$log2FoldChange) >= 0.5849625,"Adj P<0.01","NS")
-#dfPBM$Change <- ifelse(dfPBM$log2FoldChange>0,"Up","Down")
 head(dfPBM)
 
 #3 input 
@@ -33,7 +31,6 @@ head(dfWI)
 dfWI$cluster = 'WI'
 
 dfWI$label <- ifelse(dfWI$padj<0.01 & abs(dfWI$log2FoldChange)>= 0.5849625,"Adj P<0.01","NS")
-#dfWI$Change <- ifelse(dfWI$log2FoldChange>0,"Up","Down")
 head(dfWI)
 
 #combine
@@ -48,7 +45,6 @@ top10sig3 <- filter(df,cluster=="WI") %>% distinct(Gene,.keep_all = T) %>% top_n
 head(top10sig3)
 
 #extreact cluster's Top10,combine
-#top10sig <- rbind(top10sig0,top10sig1,top10sig2,top10sig3,top10sig4,top10sig5,top10sig6,top10sig7,top10sig8)
 top10sig <- rbind(top10sig1,top10sig2,top10sig3)
 #top10sig<-top10sig0
 #New col,Top10==2，Otherwise1；
