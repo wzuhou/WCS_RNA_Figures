@@ -17,8 +17,8 @@ export OMP_NUM_THREADS=$NSLOTS
 module load igmm/apps/STAR/2.7.8a
 
 Species=G_NCBI
-ref='/exports/cmvm/eddie/eb/groups/smith_grp/Zhou_wu/WCS/RNA_job/NCBI/GCF_028769735.1_RI_Zleu_2.0_genomic.fna'
-anno='/exports/cmvm/eddie/eb/groups/smith_grp/Zhou_wu/WCS/RNA_job/NCBI/GCF_028769735.1_RI_Zleu_2.0_genomic.gtf'
+ref='./WCS/RNA_job/NCBI/GCF_028769735.1_RI_Zleu_2.0_genomic.fna'
+anno='./WCS/RNA_job/NCBI/GCF_028769735.1_RI_Zleu_2.0_genomic.gtf'
 
 mkdir Star_index_${Species}
 STAR \
