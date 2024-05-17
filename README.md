@@ -4,7 +4,7 @@ Author:Z.Wu
 
 ---
 
-### List of figures
+### Scripts for figures
 
 1. `Joint_volcano.R`
 2. `Volcano_plot_proportion.R`
