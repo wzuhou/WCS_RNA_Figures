@@ -1,11 +1,4 @@
 #!/bin/sh
-###########################################
-#                                         #
-# Submit a job which uses some installed  #
-# applications, using:                    #
-# "module load <application>"             #
-#                                         #
-###########################################
 
 # Grid Engine options
 #$ -N S_index
