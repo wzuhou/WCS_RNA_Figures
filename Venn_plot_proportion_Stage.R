@@ -72,7 +72,7 @@ for (TS in TISSUE) {
       GRP=colnames(df3)[i]
       VALUE=df3[i]
       #print(GRP)
-      cat(paste0('"',GRP,'"',"=",VALUE,',')) #Check the color code in case there is missing combination, the color may be shifted
+      cat(paste0('"',GRP,'"',"=",VALUE,',')) 
     } ), collapse="\n") 
     
     a<-stringr::str_sub(a, end=-2)
@@ -92,7 +92,7 @@ for (TS in TISSUE) {
                #quantities = TRUE,
                quantities=list(cex=1.5),
                # fill = "transparent",
-               fills = list(fill = c( '#3B9AB2','#F21A00'), alpha = 0.6),
+               fills = list(fill = c( '#3B9AB2','#F21A00'), alpha = 0.6), ##Check the color code in case there is missing combination, the color may be shifted
                lty = 1, #1:4,
                legend = T,
                #labels = list(font =2,cex=0.8), #labels = list(font =2,cex=0.8,pos = 4,y =c(3,-3 ),just = c( "bottom")),
@@ -184,7 +184,7 @@ for (TS in TISSUE) {
                #quantities = TRUE,
                quantities=list(cex=1.5),
                # fill = "transparent",
-               fills = list(fill = c("#ECCBAE", "#046C9A" ,"#D69C4E", "#ABDDDE"), alpha = 0.6),
+               fills = list(fill = c("#ECCBAE", "#046C9A" ,"#D69C4E", "#ABDDDE"), alpha = 0.6), ##Check the color code in case there is missing combination, the color may be shifted
                lty = 1, #1:4,
                legend = T,
                #labels = list(font =2,cex=0.8), #labels = list(font =2,cex=0.8,pos = 4,y =c(3,-3 ),just = c( "bottom")),
