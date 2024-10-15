@@ -72,7 +72,7 @@ for (TS in TISSUE) {
       GRP=colnames(df3)[i]
       VALUE=df3[i]
       #print(GRP)
-      cat(paste0('"',GRP,'"',"=",VALUE,','))
+      cat(paste0('"',GRP,'"',"=",VALUE,',')) #Check the color code in case there is missing combination, the color may be shifted
     } ), collapse="\n") 
     
     a<-stringr::str_sub(a, end=-2)
